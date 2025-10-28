@@ -1,72 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Artwork Detail</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-
-  <!-- Paste the <style> from step 1 here if you’re not using style.css -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 </head>
-<body class="space-bg text-red-400 overflow-x-hidden">
-  <!-- Optional CSS twinkle overlay (on top of the tiled background) -->
-  <div class="twinkle-overlay"></div>
+<body class="bg-black text-red-400 overflow-x-hidden">
+    <script>
+        VANTA.NET({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xff0000,
+            backgroundColor: 0x0,
+            points: 12.00,
+            maxDistance: 22.00,
+            spacing: 18.00
+        })
+    </script>
 
-  <custom-navbar></custom-navbar>
+    <custom-navbar></custom-navbar>
+    
+    <div class="main-content">
+        <div class="floating-box bg-black bg-opacity-70 border-2 border-purple-500 rounded-lg p-8 backdrop-blur-sm">
+            <a href="javascript:history.back()" class="flex items-center text-blue-400 mb-6">
+                <i data-feather="arrow-left" class="mr-2"></i>
+                Back to Gallery
+            </a>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="w-full lg:w-1/2">
+                    <img src="https://walrusingart-hart.weebly.com/uploads/1/5/4/1/154158769/screenshot-2025-10-21-at-10-06-42-am_orig.png" alt="Artwork" class="w-full rounded-lg border border-red-500">
+                </div>
+                
+                <div class="w-full lg:w-1/2">
+                    <h1 class="text-3xl font-bold mb-4 text-blue-400">3D Virtual Enviornment</h1>
+                    <div class="mb-6">
+                        <span class="inline-block bg-red-900 bg-opacity-70 px-3 py-1 rounded-full text-sm mr-2">3D</span>
+                        <span class="inline-block bg-purple-900 bg-opacity-70 px-3 py-1 rounded-full text-sm">Digital Art</span>
+                        <span class="inline-block bg-blue-900 bg-opacity-70 px-3 py-1 rounded-full text-sm">Interactive</span>
 
-  <!-- Center the content nicely -->
-  <div class="main-content min-h-screen flex items-center justify-center p-6 lg:p-12">
-    <div class="floating-box bg-black/70 border-2 border-purple-500 rounded-lg p-8 backdrop-blur-sm max-w-6xl w-full">
-      <a href="javascript:history.back()" class="flex items-center text-blue-400 mb-6">
-        <i data-feather="arrow-left" class="mr-2"></i>
-        Back to Gallery
-      </a>
+                        
+                    </div>
+                    
+                    <div class="prose prose-invert max-w-none">
 
-      <div class="flex flex-col lg:flex-row gap-8">
-        <div class="w-full lg:w-1/2">
-          <img src="https://walrusingart-hart.weebly.com/uploads/1/5/4/1/154158769/screenshot-2025-10-21-at-10-06-42-am_orig.png"
-               alt="Artwork"
-               class="w-full rounded-lg border border-red-500">
+
+                     <center> <a href="https://newart.city/show/virtual-space-74" >                        <span  class="inline-block bg-blue-300 bg-opacity-70 px-9 py-3 rounded-full text-sm">Click to view the virtual space</span> </a> </center>
+<br>
+
+
+<p>
+Every 3D model within this virtual space is created by me. This world is meant to instill upon the viewer a feeling of being placed among miniature figures. The user is very tall compared to the colorful alphabet/numerical creatures on the ground. The water and the floating cloud islands make the place feel ethereal and otherworldly, since they are assets I had created for the previous desk project. As the user walks around, they may come across images referencing pop culture with accompanying sound effects. The music that plays in the background makes the atmosphere feel playful.
+
+
+                      </p>
+                        <h3 class="text-xl font-semibold mt-6 mb-2 text-purple-400">Technical Details</h3>
+                        <ul class="list-disc pl-5">
+                            <li>Created: October 2025</li>
+                            <li>Software: Blender, New Art City</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="w-full lg:w-1/2">
-          <h1 class="text-3xl font-bold mb-4 text-blue-400">3D Virtual Enviornment</h1>
-
-          <div class="mb-6 space-x-2">
-            <span class="inline-block bg-red-900/70 px-3 py-1 rounded-full text-sm">3D</span>
-            <span class="inline-block bg-purple-900/70 px-3 py-1 rounded-full text-sm">Digital Art</span>
-            <span class="inline-block bg-blue-900/70 px-3 py-1 rounded-full text-sm">Interactive</span>
-          </div>
-
-          <div class="prose prose-invert max-w-none">
-            <center>
-              <a href="https://newart.city/show/virtual-space-74">
-                <span class="inline-block bg-blue-300/70 px-9 py-3 rounded-full text-sm">
-                  Click to view the virtual space
-                </span>
-              </a>
-            </center>
-            <br>
-
-            <p>
-              Every 3D model within this virtual space is created by me. This world is meant to instill upon the viewer a feeling of being placed among miniature figures. The user is very tall compared to the colorful alphabet/numerical creatures on the ground. The water and the floating cloud islands make the place feel ethereal and otherworldly, since they are assets I had created for the previous desk project. As the user walks around, they may come across images referencing pop culture with accompanying sound effects. The music that plays in the background makes the atmosphere feel playful.
-            </p>
-
-            <h3 class="text-xl font-semibold mt-6 mb-2 text-purple-400">Technical Details</h3>
-            <ul class="list-disc pl-5">
-              <li>Created: October 2025</li>
-              <li>Software: Blender, New Art City</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <script src="components/navbar.js"></script>
-  <script>feather.replace();</script>
+    <script src="components/navbar.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
 </body>
 </html>
