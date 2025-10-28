@@ -1,49 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap');
-
 body {
-  font-family: 'Share Tech Mono', monospace;
+    font-family: 'Courier New', monospace;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
-.neon-text {
-  text-shadow: 0 0 5px #ff2a6d, 0 0 10px #d300c5, 0 0 15px #05d9e8;
-  animation: flicker 1.5s infinite alternate;
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding-left: 100px;
 }
 
-@keyframes flicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    text-shadow: 
-      0 0 5px #ff2a6d, 
-      0 0 10px #d300c5, 
-      0 0 15px #05d9e8,
-      0 0 20px #05d9e8;
-  }
-  20%, 24%, 55% {        
-    text-shadow: none;
-  }
+.floating-box {
+    width: 80%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    box-shadow: 0 0 20px rgba(187, 0, 255, 0.5);
 }
 
-.glow {
-  text-shadow: 0 0 10px rgba(5, 217, 232, 0.7);
+.gallery-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
-/* Cyberpunk styled scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  background-color: #0c0e1a;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(#ff2a6d, #d300c5);
-  border-radius: 10px;
-}
-
-.project-card {
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  border-color: #05d9e8;
-  box-shadow: 0 10px 20px rgba(5, 217, 232, 0.2);
+@media (max-width: 768px) {
+    .main-content {
+        padding-left: 0;
+        padding-top: 80px;
+    }
+    
+    .floating-box {
+        width: 95%;
+    }
 }
