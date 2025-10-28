@@ -14,11 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
             card.style.transform = 'scale(1)';
         });
     });
-    // const isStarPage = location.pathname.startsWith("/tab");
-const isStarPage = starPages.has(location.pathname);
 
-if (isStarPage) {
-  document.body.classList.add("theme-stars");
-  // If you want a different set of pages to get a different theme:
-  // document.body.classList.add("theme-nebula");}
+    // --- Add starry background for /tab/ pages ---
+    if (location.pathname.startsWith("/portfolio/tab/")) {
+        document.body.classList.add("theme-stars");
+        console.log("Starry background applied for /tab/ page");
+    }
 });
