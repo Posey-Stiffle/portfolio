@@ -2,6 +2,7 @@ body {
     font-family: 'Courier New', monospace;
     min-height: 100vh;
     overflow-y: auto;
+    cursor:url(http://media.tumblr.com/4927b83237b352c7d96ccc4fbcc5b313/tumblr_inline_mfn7vru6UB1qid2nw.png), url(http://media.tumblr.com/4927b83237b352c7d96ccc4fbcc5b313/tumblr_inline_mfn7vru6UB1qid2nw.png), auto;
 }
 
 .main-content {
@@ -11,6 +12,9 @@ body {
     min-height: 90vh;
     padding-left: 100px;
 }
+
+
+
 
 .floating-box {
     width: 80%;
