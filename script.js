@@ -14,4 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
             card.style.transform = 'scale(1)';
         });
     });
+    // const isStarPage = location.pathname.startsWith("/tab");
+const isStarPage = starPages.has(location.pathname);
+
+if (isStarPage) {
+  document.body.classList.add("theme-stars");
+  // If you want a different set of pages to get a different theme:
+  // document.body.classList.add("theme-nebula");}
 });
