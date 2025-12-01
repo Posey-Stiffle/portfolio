@@ -80,6 +80,11 @@ class CustomNavbar extends HTMLElement {
           <span class="nav-text">4D</span>
         </a>
         
+        <a href="ART74.html" class="nav-item">
+          <i data-feather="layers"></i>
+          <span class="nav-text">4D</span>
+        </a>
+        
         <a href="about.html" class="nav-item">
           <i data-feather="user"></i>
           <span class="nav-text">About</span>
