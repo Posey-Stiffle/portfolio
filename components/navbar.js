@@ -81,7 +81,7 @@ class CustomNavbar extends HTMLElement {
         </a>
         
         <a href="ART74.html" class="nav-item">
-          <i data-feather="layers"></i>
+          <i data-feather="mouse-pointer"></i>
           <span class="nav-text">ART74</span>
         </a>
         
